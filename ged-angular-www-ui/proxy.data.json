@@ -1,0 +1,75 @@
+{
+  "books": [
+    {
+      "id": 2,
+      "isbn": "978-3868021035",
+      "title": "Java EE 8: Noch Besser",
+      "publisher": 1,
+      "authors": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": 4,
+      "isbn": "978-3868021035",
+      "title": "Java EE 7: Enterprise-Anwendungsentwicklung leicht gemacht",
+      "publisher": 2,
+      "authors": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": 5,
+      "isbn": "978-3868021035",
+      "title": "Java EE 7: Enterprise-Anwendungsentwicklung leicht gemacht",
+      "publisher": 2,
+      "authors": [
+        1
+      ]
+    },
+    {
+      "id": 6,
+      "isbn": "978-3868025555",
+      "title": "Test It !",
+      "publisher": 2,
+      "authors": [
+        2
+      ]
+    },
+    {
+      "id": 7,
+      "isbn": "978-3868021035",
+      "title": "Java EE 8: Noch Besser!",
+      "publisher": 2,
+      "authors": [
+        2
+      ]
+    }
+  ],
+  "authors": [
+    {
+      "id": 1,
+      "label": "Dirk Weil"
+    },
+    {
+      "id": 2,
+      "label": "Adam Bean"
+    }
+  ],
+  "publishers": [
+    {
+      "id": 1,
+      "label": "entwickler.press"
+    },
+    {
+      "id": 2,
+      "label": "Rheinwerk Computing"
+    },
+    {
+      "id": 3,
+      "label": "Springer Vieweg"
+    }
+  ]
+}

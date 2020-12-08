@@ -1,0 +1,30 @@
+<div class="content">
+  <form (ngSubmit)="save()" *ngIf="form" [formGroup]="form">
+    <div class="form-group">
+      <label for="id">ID</label>
+      <input formControlName="id" id="id" pInputText type="text"/>
+
+      <label class="right-inline" for="isbn">ISBN</label>
+      <input class="input-control" formControlName="isbn" id="isbn" pInputText/>
+    </div>
+    <div class="form-group">
+      <label for="title">Titel</label>
+      <input formControlName="title" id="title" pInputText type="text"/>
+    </div>
+    <div class="form-group">
+      <label for="publisher">Publisher</label>
+      <p-dropdown [options]="publisher" formControlName="publisher" id="publisher"></p-dropdown>
+      <!-- <input formControlName="publisher" id="publisher" pInputText type="text" /> -->
+
+      <label class="right-inline" for="author">Author</label>
+      <!-- <p-dropdown [autoWidth]="false" [options]="authors" formControlName="author" id="author"></p-dropdown> -->
+      <!-- <input formControlName="author" id="author" pInputText class="input-control" /> -->
+      <p-multiSelect [options]="authors" formControlName="authors" id="author"></p-multiSelect>
+    </div>
+
+    <div class="form-buttons">
+      <p-button icon="pi pi-check" label="submit" type="submit"></p-button>
+      <p-button icon="pi pi-times" label="cancel" routerLink='/home'></p-button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,33 @@
+<table>
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>ISBN</th>
+    <th>Title</th>
+    <th>Authors</th>
+    <th>
+      <button [routerLink]="'-1'" icon="pi pi-file" label="new" pButton></button>
+    </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let book of books">
+    <td>{{ book.id }}</td>
+    <td>{{ book.isbn }}</td>
+    <td>{{ book.title }}</td>
+    <td>{{ book.authors }}</td>
+    <td>
+      <button icon="pi pi-pencil" pButton routerLink="{{book.id}}"></button>
+      <button
+        (click)="delete(book)"
+        class="ui-button-danger icon-only"
+        icon="pi pi-trash"
+        pButton
+        type="button"
+      ></button>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+<router-outlet></router-outlet>
