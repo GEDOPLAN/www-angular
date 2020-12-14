@@ -1,0 +1,13 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>de.gedoplan.demo</groupId>
+    <artifactId>www-angular</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>ged-angular-www-ui</module>
+        <module>ged-angular-www-backend</module>
+    </modules>
+</project>

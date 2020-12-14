@@ -1,9 +1,13 @@
 <project>
   <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>de.gedoplan.demo</groupId>
+    <artifactId>www-angular</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
 
   <groupId>de.gedoplan.demo</groupId>
-  <artifactId>www-angular</artifactId>
-  <version>1.0</version>
+  <artifactId>www-angular-ui</artifactId>
   <packaging>war</packaging>
 
   <build>
